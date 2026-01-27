@@ -1,6 +1,6 @@
 name: Sublink Pro
 package: community.lazycat.app.sublink-pro
-version: 1.0.78
+version: 1.0.79
 min_os_version: 1.3.8
 description: "A subscription link conversion tool"
 license: MIT
@@ -17,7 +17,7 @@ application:
 
 services:
   sublinkpro:
-    image: docker.1ms.run/zerodeng/sublink-pro:v1.0.78
+    image: docker.1ms.run/zerodeng/sublink-pro:v1.0.79
     binds:
       - /lzcapp/var/db:/app/db
       - /lzcapp/var/template:/app/template
