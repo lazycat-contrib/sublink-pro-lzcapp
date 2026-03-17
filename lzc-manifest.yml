@@ -17,7 +17,7 @@ application:
 
 services:
   sublinkpro:
-    image: dockerproxy.net/zerodeng/sublink-pro:v1.0.87
+    image: docker.1ms.run/zerodeng/sublink-pro:v1.0.87
     binds:
       - /lzcapp/var/db:/app/db
       - /lzcapp/var/template:/app/template
