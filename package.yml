@@ -1,0 +1,16 @@
+name: Sublink Pro
+package: community.lazycat.app.sublink-pro
+version: 1.1.5
+min_os_version: 1.5.0
+description: "A subscription link conversion tool"
+license: MIT
+homepage: https://github.com/ZeroDeng01/sublinkPro
+author: zerodeng
+
+locales:
+  en:
+    name: "Sublink Pro"
+    description: "A subscription link conversion tool"
+  zh:
+    name: "Sublink Pro"
+    description: "订阅链接转换工具"
