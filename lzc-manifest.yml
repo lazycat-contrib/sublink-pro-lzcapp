@@ -8,7 +8,7 @@ application:
 
 services:
   sublinkpro:
-    image: docker.1ms.run/zerodeng/sublink-pro:v1.1.5
+    image: docker.1ms.run/zerodeng/sublink-pro:v1.1.6
     binds:
       - /lzcapp/var/db:/app/db
       - /lzcapp/var/template:/app/template
