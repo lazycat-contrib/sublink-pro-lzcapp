@@ -1,6 +1,6 @@
 name: Sublink Pro
 package: community.lazycat.app.sublink-pro
-version: 1.2.2
+version: 1.2.7
 min_os_version: 1.5.0
 description: "A subscription link conversion tool"
 license: MIT
