@@ -1,0 +1,38 @@
+version: 1
+
+project:
+  root: .
+  build_config: lzc-build.yml
+  package_file: package.yml
+  output: dist/sublink-pro.lpk
+
+update:
+  strategy: publish
+  version_source:
+    type: image
+    image: sublink-pro
+
+build:
+  run_buildscript: false
+
+images:
+  - id: sublink-pro
+    target: service
+    service: sublinkpro
+    source: docker.io/zerodeng/sublink-pro
+    channel: stable
+    tag_regex: '^v?\d+\.\d+\.\d+$'
+    version_regex: '^v?(?P<version>\d+\.\d+\.\d+)$'
+    delivery:
+      mode: mirror
+      image_template: docker.1ms.run/zerodeng/sublink-pro:{tag}
+      require_digest_match: true
+
+stores:
+  official:
+    enabled: false
+  private:
+    enabled: true
+    skip_if_version_exists: true
+    name: Sublink Pro
+    summary: Published from GitHub Actions
