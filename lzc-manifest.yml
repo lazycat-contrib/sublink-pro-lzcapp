@@ -5,10 +5,10 @@ application:
   upstreams:
     - location: /
       backend: http://sublinkpro:8000/
-
 services:
   sublinkpro:
-    image: docker.1ms.run/zerodeng/sublink-pro:v1.2.14
+    # upstream: docker.io/zerodeng/sublink-pro:v1.2.26
+    image: docker.1ms.run/zerodeng/sublink-pro:v1.2.26
     binds:
       - /lzcapp/var/db:/app/db
       - /lzcapp/var/template:/app/template
