@@ -21,6 +21,7 @@ images:
     service: sublinkpro
     source: docker.io/zerodeng/sublink-pro
     channel: stable
+    sort: updated
     tag_regex: '^v?\d+\.\d+\.\d+$'
     version_regex: '^v?(?P<version>\d+\.\d+\.\d+)$'
     delivery:
