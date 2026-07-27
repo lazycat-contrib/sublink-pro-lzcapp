@@ -7,8 +7,8 @@ application:
       backend: http://sublinkpro:8000/
 services:
   sublinkpro:
-    # upstream: docker.io/zerodeng/sublink-pro:v1.2.16
-    image: docker.1ms.run/zerodeng/sublink-pro:v1.2.16
+    # upstream: docker.io/zerodeng/sublink-pro:v1.2.17
+    image: docker.1ms.run/zerodeng/sublink-pro:v1.2.17
     binds:
       - /lzcapp/var/db:/app/db
       - /lzcapp/var/template:/app/template
